@@ -80,6 +80,14 @@ plot(L8RBkm, col=c(terrain.colors(2),cm.colors(2),heat.colors(3),gray.colors(1),
 ###############################################################################
 # gdalcubes
 ###############################################################################
+
+## 67 Gb download
+## download.file("https://uni-muenster.sciebo.de/s/SmiqWcCCeFSwfuY/download", destfile = "data/L8_Amazon.zip")
+
+## 740 Mb download
+## download.file("https://uni-muenster.sciebo.de/s/e5yUZmYGX0bo4u9/download", destfile = "data/L8_Amazon.zip")
+
+
 if (!file.exists("L8_Amazon.zip")) {
   download.file("https://uni-muenster.sciebo.de/s/e5yUZmYGX0bo4u9/download", destfile = "data/L8_Amazon.zip")
   unzip("data/L8_Amazon.zip", exdir = "data/L8_Amazon")
